@@ -1,0 +1,73 @@
+<div class="App">
+  <div class="header-banner">
+    <h1 [ngStyle]="{ 'font-size': '50px', 'padding-bottom': '30px' }">
+      Hi, I am Alekya Paladugu
+    </h1>
+    <h2 [ngStyle]="{ 'font-size': '30px' }">A Web Developer</h2>
+    <ul class="nav social">
+      <li>
+        <a href="https://www.facebook.com/alekya.paladugu" target="_blank">
+          <i class="fa-brands fa-facebook white-icon"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/alekyapaladugu/" target="_blank">
+          <i class="fa-brands fa-linkedin white-icon"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/alekya_paladugu/" target="_blank">
+          <i class="fa-brands fa-instagram white-icon"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/alekyapaladugu" target="_blank">
+          <i class="fa-brands fa-github white-icon"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="scrolldown">
+    <a [style]="{ cursor: 'pointer' }" (click)="scrollToAboutSection(about)">
+      <i class="fa-solid fa-circle-chevron-down white-icon fa-2x"></i>
+    </a>
+  </div>
+  <section class="about-me-section" #about>
+    <div class="row">
+      <div class="col-3">
+        <span class="profile-img">
+          <img src="../../assets/images/profile-pic.jpg" />
+        </span>
+      </div>
+      <div class="col-9">
+        <div class="about-me">
+          <h2>About Me</h2>
+          <p>
+            I am Alekya Paladugu, experienced frontend developer with 3.5 years
+            of Industry experience in building responsive web applications using
+            JavaScript, HTML5, CSS, Angular. My Long-Term goal is to enagage in
+            developing Full Stack web applications, Back-end engineering and
+            Micorservices.
+          </p>
+        </div>
+        <div class="hobbies">
+          <h2>Hobbies</h2>
+          <ul>
+            <li>Reading Articles and Blogs</li>
+            <li>Personality Development Videos</li>
+            <li>Nature Photography</li>
+            <li>Webinars related to latest technologies in the market</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h2>Contact Details</h2>
+          <p>Alekya Paladugu</p>
+          <p>Hyderabad</p>
+          <p>Telangana</p>
+          <p>+91 7799260360</p>
+          <p>1996ale21@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
