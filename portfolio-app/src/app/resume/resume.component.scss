@@ -1,12 +1,39 @@
 .resume-container {
   background: #2b2b2b;
-  padding: 110px 20px 0px;
+  padding: 110px 20px 20px;
   color: white;
+  height: 100%;
+  .education,
+  .work {
+    max-width: 1024px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
 }
 .resume-title {
   span {
     font-size: 25px;
     padding: 5px;
     border-bottom: 1px solid white;
+  }
+}
+.resume-university,
+.resume-company {
+  padding-top: 30px;
+}
+.info {
+  padding-top: 20px;
+}
+/* Mobile devices sytles */
+@media screen and (max-width: 767px) {
+  .resume-container {
+    height: auto;
+  }
+  .resume-title,
+  .resume-university,
+  .resume-company {
+    text-align: center;
   }
 }
