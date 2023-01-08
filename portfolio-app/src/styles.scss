@@ -87,8 +87,30 @@ body {
 app-header {
   position: absolute;
   width: 100%;
+  z-index: 1;
 }
 a {
   color: white !important;
   text-decoration: none !important;
+}
+/* mobile wide/smaller tablets
+------------------------------------------------------------
+*/
+@media screen and (max-width: 767px) {
+  /* About component
+  ----------------------------------------------*/
+  app-home {
+    .header-banner {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+    .profile-img {
+      display: none !important;
+    }
+    .about-me-section {
+      padding-top: 60px !important;
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+    }
+  }
 }

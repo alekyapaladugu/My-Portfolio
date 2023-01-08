@@ -6,11 +6,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { ResumeComponent } from './resume/resume.component';
 
-const routes: Routes = [{ path: 'about', component: HomeComponent }];
+const routes: Routes = [
+  { path: 'about', component: HomeComponent },
+  { path: 'resume', component: ResumeComponent },
+];
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, ResumeComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
