@@ -1,6 +1,6 @@
 <header id="home">
   <nav id="nav-wrap">
-    <ul class="nav">
+    <ul class="nav hide-sm">
       <li>
         <a routerLink="about" routerLinkActive="active" class="header-link"
           >ABOUT</a
@@ -12,10 +12,42 @@
         >
       </li>
       <li>
+        <a routerLink="skills" routerLinkActive="active" class="header-link"
+          >SKILLS</a
+        >
+      </li>
+      <li>
         <a routerLink="contact" routerLinkActive="active" class="header-link"
           >CONTACT</a
         >
       </li>
     </ul>
   </nav>
+  <div class="page-container">
+    <header>
+      <button mat-button class="menu-button hide-lg" (click)="sidenav.toggle()">
+        <mat-icon>{{ isMenuOpen ? "menu_open" : "menu" }}</mat-icon>
+      </button>
+      <mat-sidenav-container class="sidenav-container">
+        <mat-sidenav
+          #sidenav
+          autoFocus="false"
+          mode="over"
+          [(opened)]="isMenuOpen"
+          class="sidenav"
+          (click)="onSidenavClick()"
+        >
+          <a mat-button routerLink="about">ABOUT</a>
+          <a mat-button routerLink="resume">RESUME</a>
+          <a mat-button routerLink="skills">SKILLS</a>
+          <a mat-button routerLink="contact">CONTACT</a>
+        </mat-sidenav>
+        <mat-sidenav-content>
+          <main>
+            <router-outlet></router-outlet>
+          </main>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+    </header>
+  </div>
 </header>

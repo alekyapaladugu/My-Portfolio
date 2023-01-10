@@ -1,0 +1,48 @@
+.contact-form-container {
+  background: #2b2b2b;
+  padding: 110px 20px 20px;
+  color: white;
+}
+.contact-heading {
+  text-align: center;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0px;
+  .label {
+    padding-bottom: 15px;
+    font-size: 20px;
+  }
+  .input {
+    height: 50px;
+    border: 1px solid white;
+  }
+}
+.textarea {
+  min-height: 220px;
+  border: 1px solid white;
+}
+.submit-btn {
+  text-align: center;
+}
+.contact-me-block {
+  margin-left: 30%;
+}
+.personal-info {
+  padding: 30px 0px;
+  margin-left: 25%;
+}
+.address {
+  color: #807878;
+}
+@media screen and (max-width: 767px) {
+  .contact-me-block,
+  .personal-info {
+    margin-left: 0;
+  }
+  .personal-info {
+    padding: 50px 0px;
+    text-align: center;
+  }
+}

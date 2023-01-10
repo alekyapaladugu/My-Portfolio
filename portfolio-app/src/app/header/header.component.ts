@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  public isMenuOpen: boolean = false;
   constructor() {}
 
   ngOnInit(): void {}
+  public onSidenavClick(): void {
+    this.isMenuOpen = false;
+  }
 }

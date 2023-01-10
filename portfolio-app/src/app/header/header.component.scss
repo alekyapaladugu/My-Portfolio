@@ -1,11 +1,14 @@
 #nav-wrap {
-  height: 70px;
   color: white;
 }
 .nav {
   display: flex;
   justify-content: center;
   font-size: 18px;
+  position: absolute;
+  z-index: 2;
+  margin: 0 auto;
+  width: 100%;
   li {
     display: inline-block;
     padding: 20px;
@@ -16,4 +19,32 @@
 }
 .header-link {
   font-weight: 500;
+}
+.page-container {
+  .sidenav-container {
+    flex: 1;
+    .sidenav {
+      min-width: 240px;
+      right: 10%;
+      top: 9%;
+      height: 22%;
+      background: rgb(58, 57, 57);
+      transform: none;
+      visibility: visible;
+      position: fixed;
+      a {
+        display: block;
+        padding: 6px 24px;
+        width: 100%;
+        text-align: left;
+      }
+    }
+  }
+}
+.menu-button {
+  position: fixed;
+  right: 10%;
+  z-index: 2;
+  border-radius: 0;
+  padding: 10px;
 }

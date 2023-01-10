@@ -114,3 +114,43 @@ a {
     }
   }
 }
+.is-warning {
+  background: #702e34;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  display: inline-block;
+  border-radius: 3px;
+  color: white;
+  width: 40%;
+  opacity: 1;
+  &:disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hide-sm {
+    display: none !important;
+  }
+  .hide-lg {
+    display: block !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hide-lg {
+    display: none !important;
+  }
+  .hide-sm {
+    display: block;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

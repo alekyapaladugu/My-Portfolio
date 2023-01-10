@@ -1,0 +1,68 @@
+<section class="contact-form-container">
+  <h1 class="contact-heading">GET IN TOUCH</h1>
+  <div class="container-body">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <form
+          class="contact-me-block"
+          [formGroup]="FormData"
+          (ngSubmit)="submitForm(FormData.value)"
+        >
+          <div class="form-group field">
+            <label for="name" class="label">Name</label>
+            <input
+              type="text"
+              formControlName="name"
+              class="form-control input"
+              id="name"
+            />
+          </div>
+          <div class="form-group field">
+            <label for="email" class="label">Email</label>
+            <input
+              type="text"
+              formControlName="email"
+              class="form-control input"
+              id="email"
+            />
+          </div>
+          <div class="form-group field">
+            <label for="message" class="label">Message</label>
+            <textarea
+              type="text"
+              formControlName="message"
+              class="form-control textarea"
+              id="message"
+            ></textarea>
+          </div>
+          <div class="submit-btn">
+            <button
+              class="button is-warning"
+              type="submit"
+              [disabled]="FormData.invalid"
+            >
+              Send!
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="personal-info">
+          <h4>Address and Phone</h4>
+          <p class="address">
+            Alekya Paladugu
+            <br />
+            alekyapaladugu@csus.edu
+            <br />
+            <br />
+            220 Cadillac Drive
+            <br />
+            Sacramento, California, 95825
+            <br />
+            +1 9167935988
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
